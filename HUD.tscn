@@ -1,0 +1,73 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://theme/themme.tres" type="Theme" id=1]
+[ext_resource path="res://theme/style.tres" type="StyleBox" id=2]
+[ext_resource path="res://script/HUD.gd" type="Script" id=3]
+[ext_resource path="res://theme/grabber.tres" type="StyleBox" id=4]
+
+[node name="HUD" type="Node2D"]
+script = ExtResource( 3 )
+
+[node name="TimeText" type="RichTextLabel" parent="."]
+margin_left = 853.219
+margin_top = 42.774
+margin_right = 984.219
+margin_bottom = 82.774
+theme = ExtResource( 1 )
+bbcode_enabled = true
+meta_underlined = false
+__meta__ = {
+"_edit_ik_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="EndText" type="RichTextLabel" parent="."]
+visible = false
+margin_left = 378.0
+margin_top = 321.0
+margin_right = 531.0
+margin_bottom = 376.0
+theme = ExtResource( 1 )
+bbcode_enabled = true
+meta_underlined = false
+text = "   Awoken
+Press ECHAP"
+__meta__ = {
+"_edit_ik_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="DeathText" type="RichTextLabel" parent="."]
+margin_left = 653.353
+margin_top = 40.9234
+margin_right = 784.353
+margin_bottom = 80.9234
+theme = ExtResource( 1 )
+bbcode_enabled = true
+meta_underlined = false
+__meta__ = {
+"_edit_ik_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="ProgressBar" type="ProgressBar" parent="."]
+margin_left = 468.09
+margin_top = 39.9998
+margin_right = 584.09
+margin_bottom = 79.9998
+custom_styles/fg = ExtResource( 2 )
+custom_styles/bg = ExtResource( 4 )
+value = 100.0
+percent_visible = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.001
+
+[node name="FadingTimer" type="Timer" parent="."]
+wait_time = 0.01
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
+[connection signal="timeout" from="FadingTimer" to="." method="_on_FadingTimer_timeout"]

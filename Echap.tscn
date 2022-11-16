@@ -1,0 +1,58 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://script/Echap.gd" type="Script" id=2]
+[ext_resource path="res://theme/themme.tres" type="Theme" id=4]
+
+[node name="Node" type="Node"]
+script = ExtResource( 2 )
+
+[node name="Quit" type="Button" parent="."]
+visible = false
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -90.5
+margin_top = -192.414
+margin_right = 90.5
+margin_bottom = -122.414
+theme = ExtResource( 4 )
+text = "Quit"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Reset" type="Button" parent="."]
+visible = false
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -91.5
+margin_top = -35.0
+margin_right = 91.5
+margin_bottom = 35.0
+theme = ExtResource( 4 )
+text = "Reset"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pause" type="Button" parent="."]
+visible = false
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -91.5
+margin_top = -175.414
+margin_right = 91.5
+margin_bottom = -105.414
+theme = ExtResource( 4 )
+text = "Resume"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="button_down" from="Quit" to="." method="_on_Quit_button_down"]
+[connection signal="pressed" from="Reset" to="." method="_on_Reset_pressed"]
+[connection signal="button_down" from="Pause" to="." method="_on_Pause_button_down"]

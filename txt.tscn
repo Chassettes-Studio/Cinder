@@ -1,0 +1,152 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://font/DigitalDisco.ttf" type="DynamicFontData" id=1]
+
+[sub_resource type="DynamicFont" id=1]
+font_data = ExtResource( 1 )
+
+[node name="Node" type="Control"]
+show_behind_parent = true
+light_mask = -2147483648
+margin_left = -1559.54
+margin_top = -191.467
+margin_right = -1559.54
+margin_bottom = -191.467
+mouse_filter = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="txtBeginning8" type="RichTextLabel" parent="."]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = 1625.0
+margin_top = 346.0
+margin_right = 1846.0
+margin_bottom = 383.0
+mouse_filter = 2
+custom_colors/default_color = Color( 1, 1, 1, 0.686275 )
+custom_fonts/normal_font = SubResource( 1 )
+bbcode_enabled = true
+bbcode_text = "Cinder... You need to [wave]wake up[/wave] from this dream..."
+text = "Cinder... You need to wake up from this dream..."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="txtBeginning9" type="RichTextLabel" parent="."]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = 1877.0
+margin_top = 382.0
+margin_right = 1992.0
+margin_bottom = 434.0
+mouse_filter = 2
+custom_colors/default_color = Color( 1, 1, 1, 0.686275 )
+custom_fonts/normal_font = SubResource( 1 )
+bbcode_enabled = true
+bbcode_text = "Press \"ZQSD\" or the arrow keys to move"
+text = "Press \"ZQSD\" or the arrow keys to move"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="txtBeginning3" type="RichTextLabel" parent="."]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = 2124.0
+margin_top = 353.0
+margin_right = 2312.0
+margin_bottom = 377.0
+mouse_filter = 2
+custom_colors/default_color = Color( 1, 1, 1, 0.686275 )
+custom_fonts/normal_font = SubResource( 1 )
+bbcode_enabled = true
+bbcode_text = "Press \"J\" to jump"
+text = "Press \"J\" to jump"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="txtBeginning4" type="RichTextLabel" parent="."]
+margin_left = 2675.0
+margin_top = 313.0
+margin_right = 2931.0
+margin_bottom = 333.0
+mouse_filter = 2
+custom_colors/default_color = Color( 1, 1, 1, 0.686275 )
+custom_fonts/normal_font = SubResource( 1 )
+bbcode_enabled = true
+bbcode_text = "Press \"L\" to switch between worlds"
+text = "Press \"L\" to switch between worlds"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="txtBeginning5" type="RichTextLabel" parent="."]
+anchor_left = -0.038
+anchor_top = -0.055
+anchor_right = -0.038
+anchor_bottom = -0.055
+margin_left = 3165.54
+margin_top = 251.467
+margin_right = 3429.54
+margin_bottom = 286.467
+rect_scale = Vector2( 0.75, 0.75 )
+mouse_filter = 2
+custom_colors/default_color = Color( 1, 1, 1, 0.686275 )
+custom_fonts/normal_font = SubResource( 1 )
+bbcode_enabled = true
+bbcode_text = "Press \"K\" to dash and \"J\" to double jump"
+text = "Press \"K\" to dash and \"J\" to double jump"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="txtBeginning7" type="RichTextLabel" parent="."]
+margin_left = 3406.54
+margin_top = 266.467
+margin_right = 3636.54
+margin_bottom = 291.467
+rect_scale = Vector2( 0.75, 0.75 )
+mouse_filter = 2
+custom_colors/default_color = Color( 1, 1, 1, 0.686275 )
+custom_fonts/normal_font = SubResource( 1 )
+bbcode_enabled = true
+bbcode_text = "...and a dash in the nightmare."
+text = "...and a dash in the nightmare."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="txtBeginning6" type="RichTextLabel" parent="."]
+margin_left = 3384.0
+margin_top = 251.0
+margin_right = 3676.0
+margin_bottom = 275.0
+rect_scale = Vector2( 0.75, 0.75 )
+mouse_filter = 2
+custom_colors/default_color = Color( 1, 1, 1, 0.686275 )
+custom_fonts/normal_font = SubResource( 1 )
+bbcode_enabled = true
+bbcode_text = "You have a double jump in the dream..."
+text = "You have a double jump in the dream..."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="txtBeginning10" type="RichTextLabel" parent="."]
+margin_left = 5381.07
+margin_top = 405.585
+margin_right = 5673.07
+margin_bottom = 442.585
+rect_scale = Vector2( 0.75, 0.75 )
+mouse_filter = 2
+custom_colors/default_color = Color( 1, 1, 1, 0.686275 )
+custom_fonts/normal_font = SubResource( 1 )
+bbcode_enabled = true
+bbcode_text = "You can switch world mid-air!"
+text = "You can switch world mid-air!"
+__meta__ = {
+"_edit_use_anchors_": false
+}

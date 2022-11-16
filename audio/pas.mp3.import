@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/pas.mp3-de524cda8872dd762ec5b02595a2749a.mp3str"
+
+[deps]
+
+source_file="res://audio/pas.mp3"
+dest_files=[ "res://.import/pas.mp3-de524cda8872dd762ec5b02595a2749a.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

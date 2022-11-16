@@ -1,0 +1,246 @@
+[gd_scene load_steps=132 format=2]
+
+[ext_resource path="res://Charactere.gd" type="Script" id=1]
+[ext_resource path="res://sprite/fall/fillette_centerfall7.png" type="Texture" id=2]
+[ext_resource path="res://sprite/jump/fillette_ljump13.png" type="Texture" id=3]
+[ext_resource path="res://sprite/jump/fillette_ljump8.png" type="Texture" id=4]
+[ext_resource path="res://sprite/jump/fillette_ljump9.png" type="Texture" id=5]
+[ext_resource path="res://sprite/jump/fillette_ljump10.png" type="Texture" id=6]
+[ext_resource path="res://sprite/jump/fillette_ljump11.png" type="Texture" id=7]
+[ext_resource path="res://sprite/jump/fillette_ljump6.png" type="Texture" id=8]
+[ext_resource path="res://sprite/jump/fillette_ljump7.png" type="Texture" id=9]
+[ext_resource path="res://sprite/jump/fillette_ljump12.png" type="Texture" id=10]
+[ext_resource path="res://sprite/fall/fillette_centerfall5.png" type="Texture" id=11]
+[ext_resource path="res://sprite/fall/fillette_lfly12.png" type="Texture" id=12]
+[ext_resource path="res://sprite/jump/fillette_ljump5.png" type="Texture" id=13]
+[ext_resource path="res://sprite/jump/fillette_ljump4.png" type="Texture" id=14]
+[ext_resource path="res://sprite/fall/fillette_lfly11.png" type="Texture" id=15]
+[ext_resource path="res://sprite/fall/fillette_centerfall10.png" type="Texture" id=16]
+[ext_resource path="res://sprite/fall/fillette_centerfall3.png" type="Texture" id=17]
+[ext_resource path="res://sprite/fall/fillette_lfly10.png" type="Texture" id=18]
+[ext_resource path="res://sprite/idle/fillette_idle7.png" type="Texture" id=19]
+[ext_resource path="res://sprite/idle/fillette_idle6.png" type="Texture" id=20]
+[ext_resource path="res://sprite/idle/fillette_idle2.png" type="Texture" id=21]
+[ext_resource path="res://sprite/idle/fillette_idle8.png" type="Texture" id=22]
+[ext_resource path="res://sprite/idle/fillette_idle4.png" type="Texture" id=23]
+[ext_resource path="res://sprite/idle/fillette_idle1.png" type="Texture" id=24]
+[ext_resource path="res://sprite/idle/fillette_idle5.png" type="Texture" id=25]
+[ext_resource path="res://sprite/idle/fillette_idle11.png" type="Texture" id=26]
+[ext_resource path="res://sprite/idle/fillette_idle10.png" type="Texture" id=27]
+[ext_resource path="res://sprite/idle/fillette_idle9.png" type="Texture" id=28]
+[ext_resource path="res://sprite/idle/fillette_idle12.png" type="Texture" id=29]
+[ext_resource path="res://sprite/idle/fillette_idle3.png" type="Texture" id=30]
+[ext_resource path="res://sprite/idle/fillette_idle14.png" type="Texture" id=31]
+[ext_resource path="res://sprite/idle/fillette_idle15.png" type="Texture" id=32]
+[ext_resource path="res://sprite/idle/fillette_idle13.png" type="Texture" id=33]
+[ext_resource path="res://sprite/dash/fillette_ldash1.png" type="Texture" id=34]
+[ext_resource path="res://sprite/fall/fillette_lfly8.png" type="Texture" id=35]
+[ext_resource path="res://sprite/dash/fillette_ldash3.png" type="Texture" id=36]
+[ext_resource path="res://sprite/fall/fillette_lfly5.png" type="Texture" id=37]
+[ext_resource path="res://sprite/fall/fillette_lfly6.png" type="Texture" id=38]
+[ext_resource path="res://sprite/dash/fillette_ldash8.png" type="Texture" id=39]
+[ext_resource path="res://sprite/dash/fillette_ldash2.png" type="Texture" id=40]
+[ext_resource path="res://sprite/dash/fillette_ldash4.png" type="Texture" id=41]
+[ext_resource path="res://sprite/dash/fillette_ldash7.png" type="Texture" id=42]
+[ext_resource path="res://sprite/fall/fillette_lfly2.png" type="Texture" id=43]
+[ext_resource path="res://sprite/fall/fillette_lfly4.png" type="Texture" id=44]
+[ext_resource path="res://sprite/dash/fillette_ldash5.png" type="Texture" id=45]
+[ext_resource path="res://sprite/dash/fillette_ldash9.png" type="Texture" id=46]
+[ext_resource path="res://sprite/fall/fillette_lfly7.png" type="Texture" id=47]
+[ext_resource path="res://sprite/fall/fillette_lfly9.png" type="Texture" id=48]
+[ext_resource path="res://sprite/fall/fillette_lfly3.png" type="Texture" id=49]
+[ext_resource path="res://sprite/dash/fillette_ldash6.png" type="Texture" id=50]
+[ext_resource path="res://sprite/move/fillette_lwalk4.png" type="Texture" id=51]
+[ext_resource path="res://sprite/move/fillette_lwalk5.png" type="Texture" id=52]
+[ext_resource path="res://sprite/move/fillette_lwalk6.png" type="Texture" id=53]
+[ext_resource path="res://sprite/move/fillette_lwalk8.png" type="Texture" id=54]
+[ext_resource path="res://sprite/move/fillette_lwalk11.png" type="Texture" id=55]
+[ext_resource path="res://sprite/move/fillette_lwalk12.png" type="Texture" id=56]
+[ext_resource path="res://sprite/move/fillette_lwalk13.png" type="Texture" id=57]
+[ext_resource path="res://sprite/move/fillette_lwalk10.png" type="Texture" id=58]
+[ext_resource path="res://sprite/move/fillette_lwalk7.png" type="Texture" id=59]
+[ext_resource path="res://sprite/move/fillette_lwalk9.png" type="Texture" id=60]
+[ext_resource path="res://sprite/jump/fillette_ljump14.png" type="Texture" id=61]
+[ext_resource path="res://sprite/move/fillette_lwalk3.png" type="Texture" id=62]
+[ext_resource path="res://sprite/move/fillette_rwalk1.png" type="Texture" id=63]
+[ext_resource path="res://sprite/move/fillette_rwalk9.png" type="Texture" id=64]
+[ext_resource path="res://sprite/jump/fillette_rjump11.png" type="Texture" id=65]
+[ext_resource path="res://sprite/move/fillette_rwalk3.png" type="Texture" id=66]
+[ext_resource path="res://sprite/move/fillette_rwalk10.png" type="Texture" id=67]
+[ext_resource path="res://sprite/move/fillette_rwalk7.png" type="Texture" id=68]
+[ext_resource path="res://sprite/move/fillette_rwalk8.png" type="Texture" id=69]
+[ext_resource path="res://sprite/move/fillette_rwalk11.png" type="Texture" id=70]
+[ext_resource path="res://sprite/move/fillette_rwalk2.png" type="Texture" id=71]
+[ext_resource path="res://sprite/move/fillette_rwalk5.png" type="Texture" id=72]
+[ext_resource path="res://sprite/move/fillette_rwalk12.png" type="Texture" id=73]
+[ext_resource path="res://sprite/move/fillette_rwalk6.png" type="Texture" id=74]
+[ext_resource path="res://sprite/jump/fillette_rjump13.png" type="Texture" id=75]
+[ext_resource path="res://sprite/move/fillette_rwalk13.png" type="Texture" id=76]
+[ext_resource path="res://sprite/move/fillette_rwalk4.png" type="Texture" id=77]
+[ext_resource path="res://sprite/jump/fillette_rjump12.png" type="Texture" id=78]
+[ext_resource path="res://sprite/jump/fillette_rjump14.png" type="Texture" id=79]
+[ext_resource path="res://sprite/fall/fillette_rfly4.png" type="Texture" id=80]
+[ext_resource path="res://sprite/fall/fillette_rfly6.png" type="Texture" id=81]
+[ext_resource path="res://sprite/fall/fillette_rfly11.png" type="Texture" id=82]
+[ext_resource path="res://sprite/dash/fillette_rdash1.png" type="Texture" id=83]
+[ext_resource path="res://sprite/fall/fillette_centerfall2.png" type="Texture" id=84]
+[ext_resource path="res://sprite/jump/fillette_rjump5.png" type="Texture" id=85]
+[ext_resource path="res://sprite/dash/fillette_rdash3.png" type="Texture" id=86]
+[ext_resource path="res://sprite/jump/fillette_rjump6.png" type="Texture" id=87]
+[ext_resource path="res://sprite/fall/fillette_centerfall1.png" type="Texture" id=88]
+[ext_resource path="res://sprite/jump/fillette_rjump7.png" type="Texture" id=89]
+[ext_resource path="res://sprite/jump/fillette_rjump8.png" type="Texture" id=90]
+[ext_resource path="res://sprite/jump/fillette_rjump9.png" type="Texture" id=91]
+[ext_resource path="res://sprite/jump/fillette_rjump10.png" type="Texture" id=92]
+[ext_resource path="res://sprite/jump/fillette_cjump6.png" type="Texture" id=93]
+[ext_resource path="res://sprite/fall/fillette_rfly2.png" type="Texture" id=94]
+[ext_resource path="res://sprite/jump/fillette_cjump7.png" type="Texture" id=95]
+[ext_resource path="res://sprite/dash/fillette_rdash7.png" type="Texture" id=96]
+[ext_resource path="res://sprite/dash/fillette_rdash5.png" type="Texture" id=97]
+[ext_resource path="res://sprite/fall/fillette_rfly7.png" type="Texture" id=98]
+[ext_resource path="res://sprite/fall/fillette_rfly8.png" type="Texture" id=99]
+[ext_resource path="res://sprite/fall/fillette_rfly9.png" type="Texture" id=100]
+[ext_resource path="res://sprite/fall/fillette_rfly5.png" type="Texture" id=101]
+[ext_resource path="res://sprite/fall/fillette_rfly3.png" type="Texture" id=102]
+[ext_resource path="res://sprite/fall/fillette_rfly10.png" type="Texture" id=103]
+[ext_resource path="res://sprite/fall/fillette_rfly12.png" type="Texture" id=104]
+[ext_resource path="res://sprite/dash/fillette_rdash9.png" type="Texture" id=105]
+[ext_resource path="res://sprite/dash/fillette_rdash8.png" type="Texture" id=106]
+[ext_resource path="res://sprite/fall/fillette_centerfall4.png" type="Texture" id=107]
+[ext_resource path="res://sprite/jump/fillette_rjump4.png" type="Texture" id=108]
+[ext_resource path="res://sprite/jump/fillette_cjump4.png" type="Texture" id=109]
+[ext_resource path="res://sprite/jump/fillette_cjump5.png" type="Texture" id=110]
+[ext_resource path="res://sprite/dash/fillette_rdash2.png" type="Texture" id=111]
+[ext_resource path="res://sprite/dash/fillette_rdash4.png" type="Texture" id=112]
+[ext_resource path="res://sprite/dash/fillette_rdash6.png" type="Texture" id=113]
+[ext_resource path="res://sprite/fall/fillette_centerfall9.png" type="Texture" id=114]
+[ext_resource path="res://sprite/fall/fillette_centerfall6.png" type="Texture" id=115]
+[ext_resource path="res://sprite/fall/fillette_centerfall8.png" type="Texture" id=116]
+[ext_resource path="res://sprite/dash/fillette_centerdash6.png" type="Texture" id=117]
+[ext_resource path="res://sprite/dash/fillette_centerdash5.png" type="Texture" id=118]
+[ext_resource path="res://sprite/dash/fillette_centerdash2.png" type="Texture" id=119]
+[ext_resource path="res://sprite/dash/fillette_centerdash7.png" type="Texture" id=120]
+[ext_resource path="res://sprite/dash/fillette_centerdash8.png" type="Texture" id=121]
+[ext_resource path="res://sprite/dash/fillette_centerdash9.png" type="Texture" id=122]
+[ext_resource path="res://sprite/dash/fillette_centerdash1.png" type="Texture" id=123]
+[ext_resource path="res://sprite/dash/fillette_centerdash3.png" type="Texture" id=124]
+[ext_resource path="res://sprite/dash/fillette_centerdash4.png" type="Texture" id=125]
+[ext_resource path="res://audio/dashsd.wav" type="AudioStream" id=126]
+[ext_resource path="res://audio/pas.wav" type="AudioStream" id=127]
+[ext_resource path="res://audio/jump.wav" type="AudioStream" id=128]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 43 ), ExtResource( 49 ), ExtResource( 44 ), ExtResource( 37 ), ExtResource( 38 ), ExtResource( 47 ), ExtResource( 35 ), ExtResource( 48 ), ExtResource( 18 ), ExtResource( 15 ), ExtResource( 12 ) ],
+"loop": true,
+"name": "LeftFall",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 88 ), ExtResource( 84 ), ExtResource( 17 ), ExtResource( 107 ), ExtResource( 11 ), ExtResource( 115 ), ExtResource( 2 ), ExtResource( 116 ), ExtResource( 114 ), ExtResource( 16 ) ],
+"loop": true,
+"name": "NeutralFall",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 62 ), ExtResource( 51 ), ExtResource( 52 ), ExtResource( 53 ), ExtResource( 59 ), ExtResource( 54 ), ExtResource( 60 ), ExtResource( 58 ), ExtResource( 55 ), ExtResource( 56 ), ExtResource( 57 ) ],
+"loop": true,
+"name": "LeftMove",
+"speed": 15.0
+}, {
+"frames": [ ExtResource( 34 ), ExtResource( 40 ), ExtResource( 36 ), ExtResource( 41 ), ExtResource( 45 ), ExtResource( 50 ), ExtResource( 42 ), ExtResource( 39 ), ExtResource( 46 ) ],
+"loop": false,
+"name": "LeftDash",
+"speed": 15.0
+}, {
+"frames": [ ExtResource( 14 ), ExtResource( 13 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 10 ), ExtResource( 3 ), ExtResource( 61 ) ],
+"loop": false,
+"name": "LeftJump",
+"speed": 18.0
+}, {
+"frames": [ ExtResource( 24 ), ExtResource( 21 ), ExtResource( 30 ), ExtResource( 23 ), ExtResource( 25 ), ExtResource( 20 ), ExtResource( 19 ), ExtResource( 22 ), ExtResource( 28 ), ExtResource( 27 ), ExtResource( 26 ), ExtResource( 29 ), ExtResource( 33 ), ExtResource( 31 ), ExtResource( 32 ) ],
+"loop": true,
+"name": "NeutralIdle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 83 ), ExtResource( 111 ), ExtResource( 86 ), ExtResource( 112 ), ExtResource( 97 ), ExtResource( 113 ), ExtResource( 96 ), ExtResource( 106 ), ExtResource( 105 ) ],
+"loop": false,
+"name": "RightDash",
+"speed": 15.0
+}, {
+"frames": [ ExtResource( 123 ), ExtResource( 119 ), ExtResource( 124 ), ExtResource( 125 ), ExtResource( 118 ), ExtResource( 117 ), ExtResource( 120 ), ExtResource( 121 ), ExtResource( 122 ) ],
+"loop": false,
+"name": "NeutralDash",
+"speed": 15.0
+}, {
+"frames": [ ExtResource( 109 ), ExtResource( 110 ), ExtResource( 93 ), ExtResource( 95 ) ],
+"loop": false,
+"name": "NeutralJump",
+"speed": 15.0
+}, {
+"frames": [ ExtResource( 108 ), ExtResource( 85 ), ExtResource( 87 ), ExtResource( 89 ), ExtResource( 90 ), ExtResource( 91 ), ExtResource( 92 ), ExtResource( 65 ), ExtResource( 78 ), ExtResource( 75 ), ExtResource( 79 ) ],
+"loop": false,
+"name": "RightJump",
+"speed": 18.0
+}, {
+"frames": [ ExtResource( 94 ), ExtResource( 102 ), ExtResource( 80 ), ExtResource( 101 ), ExtResource( 81 ), ExtResource( 98 ), ExtResource( 99 ), ExtResource( 100 ), ExtResource( 103 ), ExtResource( 82 ), ExtResource( 104 ) ],
+"loop": true,
+"name": "RightFall",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 63 ), ExtResource( 71 ), ExtResource( 66 ), ExtResource( 77 ), ExtResource( 72 ), ExtResource( 74 ), ExtResource( 68 ), ExtResource( 69 ), ExtResource( 64 ), ExtResource( 67 ), ExtResource( 70 ), ExtResource( 73 ), ExtResource( 76 ) ],
+"loop": true,
+"name": "RightMove",
+"speed": 15.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 5, 7.02506 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 5.5666, 7.63107 )
+
+[node name="Charactere" type="KinematicBody2D"]
+scale = Vector2( 2, 2 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="perso" type="AnimatedSprite" parent="."]
+frames = SubResource( 1 )
+animation = "NeutralDash"
+
+[node name="hitbox_collision" type="CollisionShape2D" parent="."]
+shape = SubResource( 2 )
+
+[node name="dashreset" type="Timer" parent="."]
+wait_time = 0.5
+one_shot = true
+
+[node name="dash" type="Timer" parent="."]
+wait_time = 0.25
+one_shot = true
+
+[node name="degats" type="Area2D" parent="."]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="degats"]
+shape = SubResource( 3 )
+
+[node name="jump" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 128 )
+volume_db = -5.0
+
+[node name="pas" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 127 )
+volume_db = 10.0
+
+[node name="dashsd" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 126 )
+volume_db = -5.0
+
+[connection signal="timeout" from="dashreset" to="." method="_on_dashreset_timeout"]
+[connection signal="timeout" from="dash" to="." method="_on_dash_timeout"]
+[connection signal="area_entered" from="degats" to="." method="_on_degats_area_entered"]
+[connection signal="area_shape_entered" from="degats" to="." method="_on_degats_area_shape_entered"]
+[connection signal="body_entered" from="degats" to="." method="_on_degats_body_entered"]

@@ -1,0 +1,295 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://script/NEPASSUPRR.gd" type="Script" id=1]
+[ext_resource path="res://theme/touchemenu.tres" type="DynamicFont" id=2]
+[ext_resource path="res://font/DigitalDisco2.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://theme/themme.tres" type="Theme" id=4]
+[ext_resource path="res://texture/logo.png" type="Texture" id=5]
+[ext_resource path="res://audio/click.wav" type="AudioStream" id=6]
+[ext_resource path="res://EcranTitre.png" type="Texture" id=7]
+[ext_resource path="res://script/playsettingsquitt.gd" type="Script" id=8]
+[ext_resource path="res://theme/test.gd" type="Script" id=9]
+[ext_resource path="res://font/DigitalDisco.ttf" type="DynamicFontData" id=11]
+
+[sub_resource type="DynamicFont" id=1]
+size = 38
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 24
+outline_size = 3
+font_data = ExtResource( 11 )
+
+[node name="Label" type="Label"]
+visible = false
+anchor_right = 0.075
+anchor_bottom = 0.3
+margin_left = 6.0
+margin_top = -2.0
+margin_right = 473.2
+margin_bottom = -152.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="mainmenu" type="CanvasLayer" parent="."]
+
+[node name="TextureRect" type="TextureRect" parent="mainmenu"]
+margin_left = -47.1823
+margin_top = -16.9278
+margin_right = 1818.82
+margin_bottom = 1092.07
+mouse_filter = 2
+texture = ExtResource( 7 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Logo" type="Sprite" parent="mainmenu"]
+position = Vector2( 512.706, 104 )
+scale = Vector2( 2, 2 )
+z_index = 11
+texture = ExtResource( 5 )
+
+[node name="Button" type="Button" parent="mainmenu"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -78.0
+margin_top = -101.0
+margin_right = 79.0
+margin_bottom = -21.0
+rect_pivot_offset = Vector2( 115, 40 )
+theme = ExtResource( 4 )
+text = "Play"
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="clique" type="AudioStreamPlayer" parent="mainmenu/Button"]
+stream = ExtResource( 6 )
+volume_db = -5.0
+
+[node name="Button2" type="Button" parent="mainmenu"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -78.0
+margin_top = 7.0
+margin_right = 79.0
+margin_bottom = 87.0
+rect_pivot_offset = Vector2( 115, 40 )
+theme = ExtResource( 4 )
+text = "Settings"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button3" type="Button" parent="mainmenu"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -77.0
+margin_top = 116.0
+margin_right = 79.0
+margin_bottom = 196.0
+rect_pivot_offset = Vector2( 115, 40 )
+theme = ExtResource( 4 )
+text = "Quit"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="mainmenu"]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_left = 5.0
+margin_top = -36.0
+margin_right = 361.0
+theme = ExtResource( 4 )
+custom_fonts/font = ExtResource( 2 )
+text = "Global Game Jam 2022"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="mainmenu"]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -241.0
+margin_top = -35.0
+margin_right = 27.9998
+margin_bottom = 1.0
+theme = ExtResource( 4 )
+custom_fonts/font = ExtResource( 2 )
+text = "Les chassettes"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="settings" type="CanvasLayer" parent="."]
+
+[node name="Container" type="Container" parent="settings"]
+visible = false
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -579.548
+margin_top = -401.5
+margin_right = 491.548
+margin_bottom = 199.5
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TabContainer" type="TabContainer" parent="settings/Container"]
+margin_left = 186.0
+margin_top = 123.0
+margin_right = 948.946
+margin_bottom = 583.0
+grow_horizontal = 0
+grow_vertical = 2
+theme = ExtResource( 4 )
+custom_fonts/font = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="^  Keybindings ^" type="Button" parent="settings/Container/TabContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 3.0
+margin_top = 42.0
+margin_right = -3.0
+margin_bottom = -3.0
+script = ExtResource( 9 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="settings/Container/TabContainer/^  Keybindings ^"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -364.473
+margin_top = -197.0
+margin_right = 372.527
+margin_bottom = 218.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="save" type="Button" parent="settings/Container/TabContainer/^  Keybindings ^"]
+anchor_left = 0.209409
+anchor_top = -0.143
+anchor_right = 0.209409
+anchor_bottom = -0.143
+margin_left = -105.511
+margin_top = 489.263
+margin_right = 65.4883
+margin_bottom = 556.263
+text = "Save"
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="clique4" type="AudioStreamPlayer" parent="settings/Container/TabContainer/^  Keybindings ^/save"]
+stream = ExtResource( 6 )
+volume_db = -5.0
+
+[node name="^ Volumes ^" type="Button" parent="settings/Container/TabContainer"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 3.0
+margin_top = 42.0
+margin_right = -3.0
+margin_bottom = -3.0
+theme = ExtResource( 4 )
+
+[node name="mastervolume" type="HSlider" parent="settings/Container/TabContainer/^ Volumes ^"]
+margin_left = 13.0
+margin_top = 33.0
+margin_right = 284.0
+margin_bottom = 62.0
+theme = ExtResource( 4 )
+min_value = -80.0
+max_value = 0.0
+step = 0.05
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="settings/Container/TabContainer/^ Volumes ^"]
+margin_left = 13.0
+margin_top = 7.0
+margin_right = 247.0
+margin_bottom = 34.0
+theme = ExtResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "Master volume:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="^ Graphismes   ^" type="Button" parent="settings/Container/TabContainer"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 3.0
+margin_top = 42.0
+margin_right = -3.0
+margin_bottom = -3.0
+
+[node name="toggle_fullscreen" type="CheckButton" parent="settings/Container/TabContainer/^ Graphismes   ^"]
+margin_left = 15.0
+margin_top = 24.0
+margin_right = 359.0
+margin_bottom = 66.0
+theme = ExtResource( 4 )
+action_mode = 0
+text = "FullScreen mode"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button4" type="Button" parent="settings/Container"]
+margin_left = 714.0
+margin_top = 596.0
+margin_right = 890.0
+margin_bottom = 663.0
+theme = ExtResource( 4 )
+text = "Exit"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="clique4" type="AudioStreamPlayer" parent="settings/Container/Button4"]
+stream = ExtResource( 6 )
+volume_db = -5.0
+
+[connection signal="button_down" from="mainmenu/Button" to="mainmenu/Button" method="_on_Button_button_down"]
+[connection signal="button_down" from="mainmenu/Button2" to="mainmenu/Button" method="_on_Button2_button_down"]
+[connection signal="button_down" from="mainmenu/Button2" to="mainmenu/Button2" method="_on_Button2_button_down"]
+[connection signal="button_down" from="mainmenu/Button3" to="mainmenu/Button" method="_on_Button3_button_down"]
+[connection signal="button_down" from="mainmenu/Button3" to="mainmenu/Button3" method="_on_Button3_button_down"]
+[connection signal="pressed" from="mainmenu/Button3" to="mainmenu/Button3" method="_on_Button3_pressed"]
+[connection signal="toggled" from="settings/Container/TabContainer/^  Keybindings ^" to="mainmenu/Button" method="_on_Keybindings__toggled"]
+[connection signal="pressed" from="settings/Container/TabContainer/^  Keybindings ^/save" to="settings/Container/TabContainer/^  Keybindings ^/save" method="_on_save_pressed"]
+[connection signal="changed" from="settings/Container/TabContainer/^ Volumes ^/mastervolume" to="mainmenu/Button" method="_on_mastervolume_changed"]
+[connection signal="changed" from="settings/Container/TabContainer/^ Volumes ^/mastervolume" to="settings/Container/TabContainer/^ Volumes ^/mastervolume" method="_on_mastervolume_changed"]
+[connection signal="value_changed" from="settings/Container/TabContainer/^ Volumes ^/mastervolume" to="mainmenu/Button" method="_on_mastervolume_value_changed"]
+[connection signal="button_down" from="settings/Container/TabContainer/^ Graphismes   ^/toggle_fullscreen" to="mainmenu/Button" method="_on_toggle_fullscreen_button_down"]
+[connection signal="button_down" from="settings/Container/Button4" to="mainmenu/Button" method="_on_Button4_button_down"]
+[connection signal="pressed" from="settings/Container/Button4" to="mainmenu/Button" method="_on_Button4_pressed"]

@@ -1,0 +1,78 @@
+[gd_resource type="Theme" load_steps=18 format=2]
+
+[ext_resource path="res://theme/style.tres" type="StyleBox" id=1]
+[ext_resource path="res://texture/tcik_test.png" type="Texture" id=2]
+[ext_resource path="res://font/DigitalDisco.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://theme/grabber.tres" type="StyleBox" id=4]
+[ext_resource path="res://texture/sidervolume .png" type="Texture" id=5]
+[ext_resource path="res://theme/touchemenu.tres" type="DynamicFont" id=6]
+[ext_resource path="res://font/DigitalDisco2.ttf" type="DynamicFontData" id=7]
+[ext_resource path="res://texture/on.png" type="Texture" id=8]
+[ext_resource path="res://texture/off.png" type="Texture" id=9]
+
+[sub_resource type="DynamicFont" id=1]
+size = 36
+font_data = ExtResource( 7 )
+
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 0.14902, 0.803922, 0.45098, 1 )
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color( 0, 0, 0, 1 )
+
+[sub_resource type="DynamicFont" id=3]
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=4]
+font_data = ExtResource( 3 )
+
+[sub_resource type="StyleBoxFlat" id=5]
+bg_color = Color( 0.0470588, 0.478431, 0.235294, 1 )
+
+[sub_resource type="StyleBoxFlat" id=6]
+bg_color = Color( 0.596078, 0.286275, 0.286275, 1 )
+
+[sub_resource type="StyleBoxFlat" id=7]
+bg_color = Color( 0.0509804, 0.352941, 0.176471, 1 )
+
+[sub_resource type="DynamicFont" id=8]
+font_data = ExtResource( 3 )
+
+[resource]
+Button/colors/font_color = Color( 1, 1, 1, 1 )
+Button/colors/font_color_disabled = Color( 0.901961, 0.901961, 0.901961, 1 )
+Button/colors/font_color_focus = Color( 0.941176, 0.941176, 0.941176, 1 )
+Button/colors/font_color_hover = Color( 1, 1, 1, 1 )
+Button/colors/font_color_pressed = Color( 1, 1, 1, 1 )
+Button/constants/hseparation = 8
+Button/fonts/font = SubResource( 1 )
+Button/styles/hover = SubResource( 2 )
+Button/styles/normal = ExtResource( 1 )
+Button/styles/pressed = ExtResource( 1 )
+CheckButton/icons/off = ExtResource( 9 )
+CheckButton/icons/on = ExtResource( 8 )
+HSlider/icons/grabber = ExtResource( 5 )
+HSlider/icons/grabber_disabled = ExtResource( 5 )
+HSlider/icons/grabber_highlight = ExtResource( 5 )
+HSlider/icons/tick = ExtResource( 2 )
+HSlider/styles/grabber_area = ExtResource( 4 )
+Label/fonts/font = SubResource( 3 )
+LineEdit/colors/clear_button_color = Color( 0.956863, 0.133333, 0.133333, 1 )
+LineEdit/fonts/font = SubResource( 4 )
+TabContainer/colors/font_color_bg = Color( 1, 1, 1, 1 )
+TabContainer/colors/font_color_disabled = Color( 1, 1, 1, 1 )
+TabContainer/colors/font_color_fg = Color( 1, 1, 1, 1 )
+TabContainer/constants/hseparation = 43246
+TabContainer/constants/label_valign_bg = 94802
+TabContainer/constants/label_valign_fg = 100000
+TabContainer/constants/side_margin = 0
+TabContainer/fonts/font = ExtResource( 6 )
+TabContainer/styles/panel = ExtResource( 1 )
+TabContainer/styles/tab_bg = SubResource( 5 )
+TabContainer/styles/tab_disabled = SubResource( 6 )
+TabContainer/styles/tab_fg = SubResource( 7 )
+TextEdit/colors/background_color = Color( 1, 0.0352941, 0.0352941, 1 )
+TextEdit/styles/normal = ExtResource( 1 )
+Tree/fonts/font = SubResource( 8 )
